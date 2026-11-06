@@ -1,6 +1,6 @@
 # TITAN HAND CAR
 
-A hand\-gesture\-controlled robotic car using an ESP32 and computer vision\.
+A hand\-gesture\-controlled robotic car using an ESP32 and computer vision\..
 
 ## Project Overview
 
