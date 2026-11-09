@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#f7f8fa"/>
+<text x="600" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#172033">TITAN HAND CAR — Preliminary Wiring Diagram</text>
+<text x="600" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#526078">ESP32 + APDS-9960 gesture sensor + L298N motor driver</text>
+<rect x="55" y="150" width="300" height="300" rx="18" fill="#e8f1ff" stroke="#3976c8" stroke-width="3"/>
+<text x="205" y="190" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" fill="#174a91">ESP32 DevKit</text>
+<g font-family="Arial" font-size="18" fill="#172033">
+<text x="85" y="245">3V3  → Sensor VCC*</text><text x="85" y="285">GND  → Common GND</text><text x="85" y="325">GPIO 21 → SDA</text><text x="85" y="365">GPIO 22 → SCL</text>
+<text x="85" y="405">25, 27, 14 → Motor A</text><text x="85" y="435">26, 18, 19 → Motor B</text>
+</g>
+<rect x="445" y="150" width="285" height="180" rx="18" fill="#e9f8ef" stroke="#36965b" stroke-width="3"/>
+<text x="587" y="190" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#176438">APDS-9960</text>
+<g font-family="Arial" font-size="18" fill="#172033"><text x="485" y="240">VCC*  ← ESP32 3V3</text><text x="485" y="275">GND  ← Common GND</text><text x="485" y="310">SDA / SCL ← GPIO 21 / 22</text></g>
+<rect x="820" y="150" width="325" height="300" rx="18" fill="#fff1e7" stroke="#c87932" stroke-width="3"/>
+<text x="982" y="190" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" fill="#8c4818">L298N Driver</text>
+<g font-family="Arial" font-size="18" fill="#172033"><text x="855" y="245">ENA ← GPIO 25</text><text x="855" y="280">IN1 / IN2 ← 27 / 14</text><text x="855" y="315">ENB ← GPIO 26</text><text x="855" y="350">IN3 / IN4 ← 18 / 19</text><text x="855" y="395">OUT1/2 → Motor A</text><text x="855" y="430">OUT3/4 → Motor B</text></g>
+<rect x="445" y="500" width="285" height="150" rx="18" fill="#fff8dc" stroke="#bd9a28" stroke-width="3"/>
+<text x="587" y="540" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#765d0c">Motor Battery Pack</text>
+<text x="587" y="580" text-anchor="middle" font-family="Arial" font-size="17" fill="#172033">+ → L298N motor supply (+)</text><text x="587" y="615" text-anchor="middle" font-family="Arial" font-size="17" fill="#172033">− → L298N GND</text>
+<g stroke="#3976c8" stroke-width="4" fill="none"><path d="M355 285 H445"/><path d="M730 250 H820"/></g>
+<g stroke="#36965b" stroke-width="4" fill="none"><path d="M355 350 H390 V300 H445"/></g>
+<g stroke="#bd9a28" stroke-width="4" fill="none"><path d="M730 575 H780 V470 H982 V450"/></g>
+<path d="M205 450 V690 H982 V450" stroke="#555" stroke-width="4" fill="none" stroke-dasharray="10 8"/>
+<text x="600" y="715" text-anchor="middle" font-family="Arial" font-size="17" fill="#333">Shared ground: ESP32 GND, sensor GND, L298N GND and battery negative</text>
+<rect x="55" y="500" width="300" height="150" rx="14" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="75" y="535" font-family="Arial" font-size="18" font-weight="bold" fill="#8b2d2d">Safety checks before power:</text>
+<text x="75" y="570" font-family="Arial" font-size="15" fill="#333">• Confirm sensor breakout accepts 3.3V.</text>
+<text x="75" y="600" font-family="Arial" font-size="15" fill="#333">• Verify motor/battery ratings first.</text>
+<text x="75" y="630" font-family="Arial" font-size="15" fill="#333">• Never feed motor battery + to ESP32.</text>
+<text x="600" y="744" text-anchor="middle" font-family="Arial" font-size="13" fill="#8b2d2d">Concept only — verify exact module labels, board pins, current and wiring before connecting power.</text>
+</svg>
