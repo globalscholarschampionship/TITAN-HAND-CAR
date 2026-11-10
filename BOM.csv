@@ -1,0 +1,13 @@
+Item,Qty,Purpose,Status / notes
+ESP32 DevKit with BLE,1,Main controller and BLE receiver,Confirm exact board and pinout
+APDS-9960 gesture sensor breakout,1,Hand gesture input,Confirm breakout voltage requirements
+L298N dual H-bridge driver,1,Drive two DC motors,Check current and thermal limits
+TT DC gear motor,2,Left and right drive,Measure rated voltage and stall current
+TT motor wheel,2,Drive wheels,"Measure actual diameter, width, and shaft fit"
+Swivel caster,1,Front/rear support,Measure plate and all four hole centres
+2WD chassis base,1,Mechanical base,Plywood/acrylic/other; CAD is conceptual
+Motor brackets,2,Secure motors,Design to match actual gearbox geometry
+Battery pack and holder,1,Motor power,Choose only after motor voltage/current checks
+Master power switch,1,Emergency power isolation,Rate for battery and motor current
+Wires and connectors,As needed,Electrical connections,Use suitable wire gauge and insulation
+Fasteners,As needed,Mount components,Measure required screw sizes and lengths
